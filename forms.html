@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="estilosform.css">
+
+</div>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>Formulario de registro</h1>
+    <p class="descripcion">
+        Complete todos los campos para crear su cuenta. Los que esten marcados 
+        con  <span class="obligatorio">*</span> son obligatorios
+    </p>
+
+<!--Formulario de informacion Personal-->
+<form id="registroForm">
+
+ <div class="formgroup">
+     <label for="correo">Nombre completo <span class="obligatorio">*</span></label>
+     <input type="text" id="nombre" name="nombre" required>
+ </div>
+  <div class="formgroup">
+     <label for="">Correo electronico<span class="obligatorio">*</span></label>
+     <input type="email" id="correo" name="correo" required>
+ </div>
+
+  <div class="formgroup">
+     <label for="clave">contraseña<span class="obligatorio">*</span></label>
+     <input type="password" id="clave" name="clave" >
+ </div>
+
+<div class="formgroup">
+     <label for="fono">contraseña<span class="obligatorio">*</span></label>
+     <input type="tel" id="fono" name="fono" >
+ </div>
+
+<div class="formgroup">
+     <label for="fnac">Fecha de nacimiento<span class="obligatorio">*</span></label>
+     <input type="date" id="fnac" name="fnac" >
+ </div>
+
+  <div class="formgroup">
+     <label for="site">Sitio web</label>
+     <input type="url" id="site" name="site">
+ </div>
+
+
+  <div class="formgroup">
+     <label for="edad">edad</label>
+     <input type="number" id="edad" name="edad" min="18" max="65">
+ </div>
+
+<!--Control select (Dropdown)-->
+
+  <div class="formgroup">
+     <label for="pais">Pais <span class="obligatorio"></span></label>
+ <select name="pais" id="pais">
+    <option value="">Selecciona tu pais</option>
+    <option value="">Argentina</option>
+    <option value="">Brasil</option>
+    <option value="">Colombia</option>
+    <option value="">Peru</option>
+    <option value="">Venezuela</option>
+    </select>
+
+
+ </div>
+
+<!--Control rRadioButton-->
+ <div class="formgroup">
+<label for="">Genero</label>
+<div class="grupo-radio">
+<input type="radio" name="Genero" id="masculino">
+<label for="masculino">masculino</label>
+ <div class="formgroup">
+<label for="">Genero</label>
+<div class="grupo-radio">
+<input type="radio" name="Genero" id="Femenino">
+<label for="Femenino">Femenino</label>
+</div>
+ <div class="formgroup">
+<label for="">Genero</label>
+<div class="grupo-radio">
+<input type="radio" name="Genero" id="otro">
+<label for="otro">Otro</label>
+</div>
+</div>
+</div>
+ </div>
+
+<!--Control CheckBox (Casilla de verificacion)-->
+<div class="formgroup">
+<label for="">intereses</label>
+<div class="grupo-check"> 
+<div class="opcion-check">
+    <input type="checkbox" name="intereses" id="tec">
+    <label for="">Tecnologia</label>
+</div>
+<div class="opcion-check">
+    <input type="checkbox" name="intereses" id="mus">
+    <label for="mus">Musica</label>
+</div>
+<div class="opcion-check">
+    <input type="checkbox" name="intereses" id="dep">
+    <label for="dep">Deporte </label>
+</div>
+<div class="opcion-check">
+    <input type="checkbox" name="intereses" id="lec">
+    <label for="lec">Lectura</label>
+</div>
+</div>
+
+</div>
+<!--Control Text area-->
+<div class="formgroup">
+<label for="bio">Biografia breve</label>
+<textarea name="bio" id="bio" rows="5"></textarea>
+</div>
+<!--Control Rango-->
+<div class="formgroup">
+<label for="niv">Nivel de experiencia</label>
+<input type="range" name="niv" id="niv" min="0" max="10" value="2">
+<span class="rango nivel" id="valor-nivel">2</span>
+</div>
+<!--Control file input-->
+<div class="formgroup">
+<label for="foto">Foto de perfil</label>
+<input type="file" name="foto" id="foto">
+</div>
+<!--Control file input-->
+<div class="formgroup">
+<label for="color">Color favorito</label>
+<input type="color" name="color" id="color">
+</div>
+<!--botones-->
+<div class="botones">
+<button type="reset" class="btn-reset">Limpiar Formulario</button>
+<button type="submit" class="btn-submit">Registrar datos</button>
+</div>
+
+
+
+<input type="submit">
+
+</form>
+
+
+
+
+
+</div>
+</body>
+</html>
